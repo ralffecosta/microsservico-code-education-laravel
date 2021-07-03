@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
-use GuzzleHttp\Promise\Create;
-use Illuminate\Http\Request;
 use App\Http\Requests\CategoryRequest;
 
 class CategoryController extends Controller

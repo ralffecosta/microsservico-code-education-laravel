@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\GenreController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,4 @@ Route::prefix('api')->group(function () {
 });
 
 Route::resource('categories', CategoryController::class)->except('create', 'edit');
+Route::resource('genres', GenreController::class)->except('create', 'edit');
